@@ -67,6 +67,7 @@ public class MainActivity extends Activity implements OnClickListener,OnFocusCha
                             v.getContext(),
                             "The Username or Password is incorrect",
                             Toast.LENGTH_LONG).show();
+//                    test for git
                 }
             }
         }
