@@ -1,0 +1,90 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/Signin"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:typeface="sans" />
+
+    <EditText
+        android:id="@+id/uName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:ems="10"
+        android:hint="@string/User_name_hint"
+        android:textColorHint="#37fff3"
+        android:typeface="sans"
+        android:textColor="#37fff3" />
+
+    <EditText
+        android:id="@+id/Passwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uName"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:ems="10"
+        android:hint="@string/password_hint"
+        android:textColorHint="#37fff3"
+        android:inputType="textPassword"
+        android:typeface="sans"
+        android:textColor="#35ffdc" />
+
+    <Button
+        android:id="@+id/bttnLogin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Passwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#2b547e"
+        android:padding="10dp"
+        android:text="@string/Login"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:typeface="sans" />
+
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bttnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="OR"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/BttnSignup"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/or"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#2b547e"
+        android:padding="10dp"
+        android:text="@string/SignInHere"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:typeface="sans" />
+
+</RelativeLayout>
+</ScrollView>

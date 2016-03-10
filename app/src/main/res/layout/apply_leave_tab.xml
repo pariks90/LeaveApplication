@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+     <LinearLayout
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <TextView
+             style="@style/CustomText"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_margin="30dp"
+             android:text="@string/type_prompt"/>
+
+         <Spinner
+             style="@style/CustomText"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/spLeaveType"
+             android:layout_margin="30dp" />
+     </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        style="@style/CustomText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="@string/From"/>
+
+        <Button
+            android:text="@string/Select_Date"
+            android:id="@+id/btnDateFrom"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:onClick="onDateFrom"
+            android:background="#2b547e"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:typeface="sans"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/CustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:text="@string/To"/>
+
+        <Button
+            android:id="@+id/btnDateTo"
+            android:text="@string/Select_Date"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="53dp"
+            android:layout_marginTop="30dp"
+            android:onClick="onDateTo"
+            android:background="#2b547e"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:typeface="sans"/>
+    </LinearLayout>
+
+        <TextView
+            style="@style/CustomText"
+            android:id="@+id/txtTotalDays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"/>
+        <EditText
+            style="@style/CustomText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/edtxtReason"
+            android:layout_margin="30dp"
+            android:hint="@string/Specify_Reason"
+            android:textColorHint="#fff" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apply Leave"
+            android:id="@+id/btnApply"
+            android:layout_margin="80dp"
+            android:background="#2b547e"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:typeface="sans"
+            android:onClick="onApplyLeave"/>
+
+    </LinearLayout>
+</ScrollView>
