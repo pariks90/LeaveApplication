@@ -60,7 +60,7 @@ public class SignUp extends AppCompatActivity implements OnCheckedChangeListener
             spinner.setVisibility(View.VISIBLE);
             /*spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                 @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                publicc void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
                 }
 
