@@ -2,6 +2,7 @@ package com.example.parix.leaveapplication;
 
         import android.app.Activity;
         import android.os.Bundle;
+        import android.support.v7.app.AppCompatActivity;
         import android.view.View;
         import android.widget.ArrayAdapter;
         import android.widget.Button;
@@ -16,7 +17,7 @@ package com.example.parix.leaveapplication;
 
         import java.util.ArrayList;
 
-public class SignUp extends Activity implements OnCheckedChangeListener,OnClickListener, View.OnFocusChangeListener {
+public class SignUp extends AppCompatActivity implements OnCheckedChangeListener,OnClickListener, View.OnFocusChangeListener {
 
     private RadioGroup rdbttnGroup;
     private Spinner spinner;

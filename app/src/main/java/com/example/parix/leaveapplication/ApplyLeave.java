@@ -25,7 +25,7 @@ import java.util.Date;
 /**
  * Created by Parix on 2/5/2016.
  */
-public class ApplyLeave extends AppCompatActivity{
+public class ApplyLeave extends Activity{
 
     Calendar calender = Calendar.getInstance();
     private Button btnDateFrom;
