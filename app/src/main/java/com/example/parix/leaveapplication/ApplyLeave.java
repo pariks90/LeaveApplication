@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.provider.CalendarContract;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -24,7 +25,7 @@ import java.util.Date;
 /**
  * Created by Parix on 2/5/2016.
  */
-public class ApplyLeave extends Activity{
+public class ApplyLeave extends AppCompatActivity{
 
     Calendar calender = Calendar.getInstance();
     private Button btnDateFrom;
